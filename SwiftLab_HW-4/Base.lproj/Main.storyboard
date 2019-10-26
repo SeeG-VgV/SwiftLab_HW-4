@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftLab_HW_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="erz-ok-7CL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="Fruits" translatesAutoresizingMaskIntoConstraints="NO" id="wln-Jf-nh5">
+                                <rect key="frame" x="107" y="84" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="M38-jg-g0Q"/>
+                                    <constraint firstAttribute="width" constant="200" id="ORe-1j-MLL"/>
+                                </constraints>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qjt-R5-6A6">
+                                <rect key="frame" x="47" y="304" width="320" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVz-fZ-gmb">
+                                <rect key="frame" x="100" y="540" width="214" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="f7T-Cx-fOi"/>
+                                </constraints>
+                                <state key="normal" image="Button">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resultButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0DL-2a-dbk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tVz-fZ-gmb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Ju-87-Q5q"/>
+                            <constraint firstItem="tVz-fZ-gmb" firstAttribute="top" secondItem="Qjt-R5-6A6" secondAttribute="bottom" constant="20" id="7AG-eK-mLt"/>
+                            <constraint firstItem="wln-Jf-nh5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="957-Gl-nts"/>
+                            <constraint firstItem="Qjt-R5-6A6" firstAttribute="top" secondItem="wln-Jf-nh5" secondAttribute="bottom" constant="20" id="ASg-PM-33G"/>
+                            <constraint firstItem="tVz-fZ-gmb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EX7-nk-b8c"/>
+                            <constraint firstItem="erz-ok-7CL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="F7I-ak-R27"/>
+                            <constraint firstAttribute="trailing" secondItem="tVz-fZ-gmb" secondAttribute="trailing" constant="100" id="Kre-aR-0Jl"/>
+                            <constraint firstItem="wln-Jf-nh5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y0u-rq-rO1"/>
+                            <constraint firstAttribute="trailing" secondItem="erz-ok-7CL" secondAttribute="trailing" id="ajm-7V-GiU"/>
+                            <constraint firstItem="tVz-fZ-gmb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="dvQ-jM-lfy"/>
+                            <constraint firstItem="Qjt-R5-6A6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gZ2-BL-5mj"/>
+                            <constraint firstItem="erz-ok-7CL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qvT-Uw-Hgg"/>
+                            <constraint firstItem="tVz-fZ-gmb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vfd-Nf-arN"/>
+                            <constraint firstAttribute="bottom" secondItem="erz-ok-7CL" secondAttribute="bottom" id="zJN-bw-iq1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="wln-Jf-nh5" id="0v6-OC-mBX"/>
+                        <outlet property="pickerView" destination="Qjt-R5-6A6" id="80M-Pt-hlO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Button" width="326" height="72"/>
+        <image name="Fruits" width="1200" height="700"/>
+        <image name="background" width="1024" height="1024"/>
+    </resources>
+</document>
