@@ -31,7 +31,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         super.viewDidLoad()
         pickerView.delegate = self
         pickerView.dataSource = self
-        imageView.image = nil
+        //imageView.image = nil
         imageView.image = UIImage(named: fruitNameEnglish[0])
     }
 
